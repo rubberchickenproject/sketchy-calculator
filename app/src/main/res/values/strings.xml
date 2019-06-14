@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="edit_name">Expression</string>
+    <string name="button_send">Enter</string>
+    <string name="title_name">Calculator</string>
+    <string name="switch_start">Start</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="Four">4</string>
+    <string name="Five">5</string>
+    <string name="Six">6</string>
+    <string name="Seven">7</string>
+    <string name="Eight">8</string>
+    <string name="Nine">9</string>
+    <string name="Zero">0</string>
+    <string name="button_clear">C</string>
+    <string name="Add">+</string>
+    <string name="Subtract">-</string>
+    <string name="Divide">/</string>
+    <string name="Multiply">x</string>
+</resources>
