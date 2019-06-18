@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My First App</string>
     <string name="edit_name">Expression</string>
-    <string name="button_send">Enter</string>
+    <string name="button_send">=</string>
     <string name="title_name">Calculator</string>
     <string name="switch_start">Start</string>
     <string name="one">1</string>
@@ -19,4 +19,6 @@
     <string name="Subtract">-</string>
     <string name="Divide">/</string>
     <string name="Multiply">x</string>
+    <string name="Left_Paren">(</string>
+    <string name="Right_Paren">)</string>
 </resources>
