@@ -169,5 +169,35 @@ public class InputActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText);
         editText.setText("");
     }
+
+    public void buttonBackspace(View view) {
+        EditText editText = (EditText) findViewById(R.id.editText);
+        String existingText = editText.getText().toString();
+        String newText;
+        ArrayList<String> exprList = new ArrayList<>(
+                Arrays.asList(existingText.split("[\\s]+")));
+        if (exprList.isEmpty() || exprList.size() == 1)
+            newText = "";
+        else {
+            int cutIndex;
+            String currentString = exprList.get(exprList.size() - 1);
+            int currentStringIndex = existingText.lastIndexOf(currentString);
+            if (currentString.length() > 1)
+                // part of a multicharacter number
+                cutIndex = existingText.length() - 1;
+            else {
+                String previousString = exprList.get(exprList.size() - 2);
+                int previousStringIndex =
+                        existingText.substring(0, currentStringIndex).lastIndexOf(previousString);
+                if (OPERATORS.contains(previousString))
+                    cutIndex = previousStringIndex + 2;
+                else
+                    cutIndex = previousStringIndex + previousString.length() + currentString.length() - 1;
+            }
+            newText = existingText.substring(0, cutIndex);
+        }
+
+        editText.setText(newText);
+    }
 }
 

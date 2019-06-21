@@ -24,20 +24,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="163dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="16dp"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
         android:onClick="startApp"
-        android:orientation="horizontal"
-        android:scrollbarSize="4dp"
-        android:scrollbarStyle="outsideOverlay"
-        android:scrollHorizontally="false"
-        android:text="@string/switch_start"
-        android:textColor="#03A9F4"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

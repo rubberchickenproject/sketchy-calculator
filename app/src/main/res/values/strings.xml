@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">My First App</string>
+    <string name="app_name">Calculator</string>
     <string name="edit_name">Expression</string>
     <string name="button_send">=</string>
-    <string name="title_name">Calculator</string>
+    <string name="title_name">Aspiring TI-84</string>
     <string name="switch_start">Start</string>
     <string name="one">1</string>
     <string name="two">2</string>
